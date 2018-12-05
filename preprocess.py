@@ -96,8 +96,6 @@ def main():
     augmented_original = augment_original(args, preprocessed_original)
     augmented_contrast = augment_contrast(args, preprocessed_contrast)
 
-    #
-
 
 if __name__ == "__main__":
     main()
