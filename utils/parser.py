@@ -1,7 +1,5 @@
 import argparse
-import logging
-
-logger = logging.getLogger()
+from time import gmtime, strftime
 
 
 def str2bool(v):
@@ -13,5 +11,5 @@ def str2bool(v):
         raise argparse.ArgumentTypeError('Boolean value expected.')
 
 
-def init_logger(log_file):
-    log
+def str2time():
+    return strftime("%Y-%m-%d %H:%M:%S.log", gmtime())
